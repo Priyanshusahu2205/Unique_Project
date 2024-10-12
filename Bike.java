@@ -1,10 +1,9 @@
-package com.abstraction;
+package com.static1;
 
-public interface Bike {
+public class Bike extends Final {
 	
-	void run();
-	void avg();
-	void engine();
-	
+	void run() {
+		System.out.println("Trying to overspeed.");
+	}
 
 }
