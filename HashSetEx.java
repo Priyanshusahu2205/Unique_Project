@@ -1,35 +1,25 @@
-package com.listInterface;
-
+package com.lmsInterview7;
 import java.util.HashSet;
 
 public class HashSetEx {
 	
 	public static void main(String[] args) {
-		
-		HashSet h1 = new HashSet(100);
-		HashSet h2 = new HashSet(100,(float) 0.90);
-		
-		HashSet<Integer> h3 = new HashSet<Integer>();
-		
-		//Add
-		h1.add('R');
-		h1.add(50);
-		h1.add(null);
-		h1.add(50);
-		System.out.println(h1);
-		
-		h1.add(10);
-		h1.add(78);
-		System.out.println(h1);
-		System.out.println(h1.contains('R'));
-		System.out.println("size of list="+h1.size());
-		h1.remove(50);
-		System.out.println(h1);
-		
-		System.out.println(h1.isEmpty());
-		System.out.println(h1.contains(44));
-		System.out.println(h1.size());
+        //create a hashSet of String 
+		 HashSet<Integer> s1 = new HashSet<>();
+        
+        //adding elements to hashSet using add() method
+        s1.add(15);
+        s1.add(20);
+        s1.add(25);
 
-	}
+        //display the hashSet before adding new element
+        System.out.println("HashSet before adding new element: " + s1);
+
+        //append a specified element to hashSet
+        s1.add(10);
+
+        //display the hashSet after adding the new element
+        System.out.println("HashSet after adding new element: " + s1);
+    }
 
 }
